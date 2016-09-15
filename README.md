@@ -45,6 +45,7 @@ Further information is already available at [Deutsche Telekom (German)](http://w
 | `mysql_hardening_chroot.automatic-sp-privileges` | 0 | [automatic_sp_privileges](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_automatic_sp_privileges)|
 | `mysql_hardening_options.secure-file-priv` | /tmp | [secure-file-priv](https://dev.mysql.com/doc/refman/5.7/en/server-options.html#option_mysqld_secure-file-priv)|
 | `mysql_allow_remote_root` | false | delete remote root users |
+| `mysql_check_root_password_presence` | true | check password setting |
 | `mysql_remove_anonymous_users` | true | remove users without authentication |
 | `mysql_remove_test_database` | true | remove test database |
 
