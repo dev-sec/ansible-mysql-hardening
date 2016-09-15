@@ -12,6 +12,7 @@ mysql_root_password: '-----====>SetR00tPa$$wordH3r3!!!<====-----'
 mysql_user_home: "{{ ansible_env.HOME}}"
 
 # ensure the following parameters are set properly
+mysql_check_root_password_presence: true
 mysql_remove_remote_root: true
 mysql_remove_anonymous_users: true
 mysql_remove_test_database: true
