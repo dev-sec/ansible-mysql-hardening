@@ -33,6 +33,11 @@ env:
 #    run_opts: "--privileged"
 #    init: /sbin/init
 
+  - distro: ubuntu1804
+    version: latest
+    init: /lib/systemd/systemd
+    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+
   - distro: debian7
     version: latest
     run_opts: "--privileged"
