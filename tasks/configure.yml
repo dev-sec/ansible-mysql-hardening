@@ -1,7 +1,6 @@
 ---
-
 - name: protect my.cnf
-  file: path='{{mysql_hardening_mysql_conf_file}}' mode=0400 owner='{{mysql_cnf_owner}}' group='{{mysql_hardening_group}}' follow=yes state=file
+  file: path='{{mysql_hardening_mysql_conf_file}}' mode=0444 owner='{{mysql_cnf_owner}}' group='{{mysql_hardening_group}}' follow=yes state=file
 
 - name: ensure permissions on mysql-datadir are correct
   file: path='{{mysql_datadir}}' state=directory owner='{{mysql_hardening_user}}' group='{{mysql_hardening_user}}'
