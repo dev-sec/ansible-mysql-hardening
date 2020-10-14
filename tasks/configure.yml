@@ -28,8 +28,8 @@
   file:
     path: '{{ mysql_hardening_mysql_confd_dir }}'
     state: directory
-    owner: '{{ mysql_cnf_owner }}'
-    group: '{{ mysql_cnf_owner }}'
+    owner: '{{ mysql_hardening_user }}'
+    group: '{{ mysql_hardening_group }}'
     mode: '0750'
 
 - name: check include-dir directive is present in my.cnf
