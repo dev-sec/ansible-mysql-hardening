@@ -1,14 +1,10 @@
 # mysql-hardening (Ansible role)
 
-[![Build Status](http://img.shields.io/travis/dev-sec/ansible-mysql-hardening.svg)][1]
-![Ansible Lint](https://github.com/dev-sec/ansible-mysql-hardening/workflows/Ansible%20Lint/badge.svg?branch=master)
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-mysql--hardening-660198.svg)][3]
 
-## Description
+**Attention:** This role has been migrated to our hardening-collection:
+* https://github.com/dev-sec/ansible-os-hardening/
+* https://galaxy.ansible.com/devsec/hardening
 
-Provides security configurations for MySQL. It is intended to set up production-ready mysql instances that are configured with minimal surface for attackers. Furthermore it is intended to be compliant with the [DevSec MySQL Baseline](https://github.com/dev-sec/mysql-baseline).
-
-This role focuses on security configuration of MySQL. Therefore you can add this hardening role alongside your existing MySQL configuration in Ansible.
 
 ## Requirements
 
